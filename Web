@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var s = " ngo   tien manh         ";
+		s = s.toLowerCase();
+		var arr_s = s.split(" ");
+		var res = "";
+		console.log(arr_s);
+		for(var i = 0; i <arr_s.length; i++) {
+			if(arr_s[i].trim() != ''){
+				arr_s[i] = arr_s[i][0].toUpperCase() + arr_s[i].slice(1);
+				if(res != ""){
+					res += " ";
+				}
+			
+			res = res.concat(arr_s[i]);
+			}
+		}
+		console.log(res);
+	</script>
+</body>
+</html>
